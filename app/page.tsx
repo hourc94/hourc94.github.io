@@ -53,50 +53,37 @@ function TeamIcon() {
     );
 }
 
-function ResearchVisual({ type }: { type: 'pharma' | 'multimodal' | 'model' }) {
-    if (type === 'pharma') {
+function ResearchVisual({ type }: { type: 'agents' | 'multimodal' | 'embodied' }) {
+    if (type === 'agents') {
         return (
             <svg viewBox="0 0 280 150" className="h-36 w-full" aria-hidden="true">
                 <defs>
-                    <linearGradient id="pharmaGradient" x1="0" x2="1" y1="0" y2="1">
+                    <linearGradient id="agentsGradient" x1="0" x2="1" y1="0" y2="1">
                         <stop offset="0%" stopColor="#dbeafe" />
                         <stop offset="100%" stopColor="#ede9fe" />
                     </linearGradient>
                 </defs>
-                <rect x="18" y="18" width="244" height="114" rx="28" fill="url(#pharmaGradient)" />
-                <circle cx="72" cy="74" r="30" fill="#ffffff" opacity="0.78" />
-                <path
-                    d="M57 63c12-12 28-12 40 0M57 85c12 12 28 12 40 0M77 53v43"
-                    fill="none"
-                    stroke="#2563eb"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                />
-                <g fill="#4f46e5">
-                    <circle cx="154" cy="45" r="8" />
-                    <circle cx="196" cy="50" r="10" />
-                    <circle cx="178" cy="82" r="7" />
-                    <circle cx="222" cy="91" r="8" />
+                <rect x="18" y="18" width="244" height="114" rx="28" fill="url(#agentsGradient)" />
+                <circle cx="140" cy="74" r="28" fill="#ffffff" opacity="0.9" />
+                <path d="M124 68h32M124 80h32M140 58v32" stroke="#4f46e5" strokeWidth="4" strokeLinecap="round" />
+                <g fill="#2563eb">
+                    <circle cx="68" cy="48" r="12" />
+                    <circle cx="72" cy="102" r="12" />
+                    <circle cx="212" cy="48" r="12" />
+                    <circle cx="208" cy="102" r="12" />
                 </g>
-                <g stroke="#64748b" strokeWidth="3" strokeLinecap="round">
-                    <path d="M162 49l26 0M191 58l-10 17M185 84l29 6" />
+                <g stroke="#64748b" strokeWidth="3" strokeLinecap="round" opacity="0.75">
+                    <path d="M80 52l34 14M82 98l32-16M200 52l-34 14M198 98l-32-16" />
+                    <path d="M68 48h-22M212 48h22M72 102h-22M208 102h22" />
                 </g>
-                <path
-                    d="M127 109c27-18 65-18 92 0"
-                    fill="none"
-                    stroke="#7c3aed"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                />
-                <path
-                    d="M127 109c27 18 65 18 92 0"
-                    fill="none"
-                    stroke="#2563eb"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                />
-                <text x="128" y="36" fill="#334155" fontSize="12" fontWeight="700">
-                    Drug AI
+                <g fill="#ffffff">
+                    <circle cx="68" cy="48" r="4" />
+                    <circle cx="72" cy="102" r="4" />
+                    <circle cx="212" cy="48" r="4" />
+                    <circle cx="208" cy="102" r="4" />
+                </g>
+                <text x="102" y="122" fill="#334155" fontSize="12" fontWeight="700">
+                    Domain Agents
                 </text>
             </svg>
         );
@@ -127,27 +114,52 @@ function ResearchVisual({ type }: { type: 'pharma' | 'multimodal' | 'model' }) {
     return (
         <svg viewBox="0 0 280 150" className="h-36 w-full" aria-hidden="true">
             <rect x="18" y="18" width="244" height="114" rx="28" fill="#eef2ff" />
-            <rect x="52" y="42" width="52" height="66" rx="16" fill="#ffffff" opacity="0.86" />
-            <path d="M65 60h26M65 74h20M65 88h26" stroke="#475569" strokeWidth="3" strokeLinecap="round" />
-            <rect x="176" y="42" width="52" height="66" rx="16" fill="#ffffff" opacity="0.86" />
-            <path d="M188 60h28M188 74h18M188 88h24" stroke="#475569" strokeWidth="3" strokeLinecap="round" />
-            <g stroke="#4f46e5" strokeWidth="3" strokeLinecap="round">
-                <path d="M104 58c22-20 50-20 72 0M104 92c22 20 50 20 72 0" />
-                <path d="M139 40v70M121 52l36 46M157 52l-36 46" />
-            </g>
-            <g fill="#6366f1">
-                <circle cx="139" cy="40" r="5" />
-                <circle cx="121" cy="52" r="5" />
-                <circle cx="157" cy="52" r="5" />
-                <circle cx="139" cy="75" r="7" />
-                <circle cx="121" cy="98" r="5" />
-                <circle cx="157" cy="98" r="5" />
-                <circle cx="139" cy="110" r="5" />
-            </g>
-            <text x="108" y="127" fill="#334155" fontSize="12" fontWeight="700">
-                Foundation Model
+            <path d="M54 112h172" stroke="#c7d2fe" strokeWidth="5" strokeLinecap="round" />
+            <rect x="58" y="88" width="38" height="22" rx="8" fill="#ffffff" opacity="0.95" />
+            <circle cx="86" cy="86" r="9" fill="#2563eb" />
+            <path
+                d="M86 86l34-22 31 18"
+                stroke="#4f46e5"
+                strokeWidth="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+            />
+            <circle cx="120" cy="64" r="10" fill="#bfdbfe" stroke="#4f46e5" strokeWidth="3" />
+            <circle cx="151" cy="82" r="10" fill="#bfdbfe" stroke="#4f46e5" strokeWidth="3" />
+            <path
+                d="M151 82l28-16"
+                stroke="#4f46e5"
+                strokeWidth="8"
+                strokeLinecap="round"
+                fill="none"
+            />
+            <path d="M181 64l14-8M182 68l16 4" stroke="#2563eb" strokeWidth="4" strokeLinecap="round" />
+            <rect x="196" y="46" width="36" height="30" rx="10" fill="#ffffff" opacity="0.95" />
+            <path d="M205 61h18M214 52v18" stroke="#2563eb" strokeWidth="3" strokeLinecap="round" />
+            <path d="M105 42c24-14 58-14 82 0" stroke="#94a3b8" strokeWidth="3" strokeDasharray="5 6" fill="none" />
+            <text x="92" y="127" fill="#334155" fontSize="12" fontWeight="700">
+                Embodied Affordance
             </text>
         </svg>
+    );
+}
+
+function HighlightAuthor({ authors }: { authors: string }) {
+    const parts = authors.split(/(Ruichao Hou\*?)/g);
+
+    return (
+        <>
+            {parts.map((part, index) => (
+                <span key={`${part}-${index}`}>
+                    {part.startsWith('Ruichao Hou') ? (
+                        <strong className="font-bold text-slate-800">{part}</strong>
+                    ) : (
+                        part
+                    )}
+                </span>
+            ))}
+        </>
     );
 }
 
@@ -174,19 +186,18 @@ export default function Page() {
             name: '侯瑞超',
             avatarAlt: '侯瑞超头像',
             title: '副教授 · 硕士生导师',
-            admissionMajor: '招生专业：药学人工智能',
+            admissionMajor: '招生专业：人工智能药学、医药大数据与人工智能',
             university: '中国药科大学',
             address: '江苏省南京市鼓楼区童家巷24号',
             team: '团队主页',
             introTitle: '个人简介',
             intro: [
-                '侯瑞超，男，中共党员，博士，中国药科大学引进人才，副教授，硕士生导师。毕业于南京大学计算机科学与技术系，获得工学博士学位。主要从事药学人工智能和多模态表征学习方向的研究工作。',
-                '近年来，主持国家级项目1项，作为骨干成员参与多项国家级、省部级科研项目并完成关键技术攻关。在TCSVT、TCI、PR等国际高水平刊物上发表论文40余篇，论文引用超过1000余次，其中1篇入选ESI高被引论文；申请或授权发明专利13项，登记软件著作权12项。',
+                '侯瑞超，男，中国药科大学副教授、硕士生导师。毕业于南京大学计算机科学与技术系，获得工学博士学位，并入选南京大学优秀博士创新能力提升计划。现担任江苏省信息技术应用学会具身智能专委会副秘书长。目前主要从事面向药物发现的人工智能技术研究和转化落地。先后主持国家级项目1项，作为骨干成员参与多项国家级、省部级科技项目。在TCSVT、TCI、ICME等国际高水平刊物上发表论文40余篇，其中1篇入选ESI高被引论文；授权发明专利3项，登记软件著作权12项。',
             ],
             workTitle: '工作经历',
             work: [
                 '2024-2026，南京大学，软件学院，助理研究员',
-                '2026-至今，中国药科大学，生物医药卓越工程师学院，副教授',
+                '2026-现在，中国药科大学，生物医药卓越工程师学院，副教授',
             ],
             serviceTitle: '学术服务',
             service: [
@@ -201,10 +212,9 @@ export default function Page() {
                 '欢迎对药学人工智能、多模态表征学习、大模型及其应用感兴趣的同学联系交流。',
             ],
             researchHeading: '研究方向',
-            researchSubtitle: '聚焦药学人工智能、多模态表征学习和大模型及其应用。',
+            researchSubtitle: '聚焦垂类大模型及多智能体、多模态表征学习、具身认知及可供性等方向。',
             achievementsHeading: '学术成果',
-            achievementsSubtitle:
-                '聚焦药学人工智能与多模态学习，持续产出高水平论文等成果。',
+            achievementsSubtitle: '聚焦药学人工智能与多模态学习。',
             honorsTitle: '代表性荣誉',
             papersTitle: '科研论文',
             patentsTitle: '发明专利',
@@ -215,12 +225,12 @@ export default function Page() {
             ],
             admissionTitle: '招生信息',
             admissionText:
-                '欢迎对药学人工智能、多模态表征学习、大模型及其应用感兴趣的同学联系交流。',
+                '欢迎对垂类大模型及多智能体、多模态表征学习、具身认知及可供性等方向感兴趣的同学联系交流。',
             admissionLabel: '招生专业',
-            admissionValue: '药学人工智能',
+            admissionValue: '人工智能药学、医药大数据与人工智能',
             contactTitle: '知识产权',
             contactText: '围绕多模态感知、目标检测、目标跟踪、医疗器械抓取等方向形成发明专利与软件著作权。',
-            footer: '© 2026 侯瑞超个人学术网站 | 最后更新时间：2026年6月9日',
+            footer: '© 2026 侯瑞超个人学术网站 | 联系我：rchou@cpu.edu.cn',
         },
         en: {
             headerName: 'Ruichao Hou, Ph.D.',
@@ -235,14 +245,13 @@ export default function Page() {
             name: 'Ruichao Hou',
             avatarAlt: 'Portrait of Ruichao Hou',
             title: 'Associate Professor · Master Supervisor',
-            admissionMajor: 'Admission Area: Pharmaceutical Artificial Intelligence',
+            admissionMajor: 'Admission Areas: AI Pharmacy; Medical Big Data and Artificial Intelligence',
             university: 'China Pharmaceutical University',
             address: 'No. 24 Tongjiaxiang, Gulou District, Nanjing, Jiangsu, China',
             team: 'Team Website',
             introTitle: 'Biography',
             intro: [
-                'Ruichao Hou is an Associate Professor and Master Supervisor at China Pharmaceutical University. He received his Ph.D. in Engineering from the Department of Computer Science and Technology, Nanjing University. His research focuses on pharmaceutical artificial intelligence and multimodal representation learning.',
-                'In recent years, he has led one national-level research project and participated as a key member in multiple national and provincial research projects, contributing to key technical breakthroughs. He has published over 40 papers in leading international journals including TCSVT, TCI, and PR, with more than 1,000 citations, including one ESI Highly Cited Paper. He has filed or been granted 13 invention patents and registered 12 software copyrights.',
+                'Ruichao Hou is an Associate Professor and Master Supervisor at China Pharmaceutical University. He received his Ph.D. in Engineering from the Department of Computer Science and Technology, Nanjing University, and was selected for the Excellent Doctoral Innovation Capability Enhancement Program of Nanjing University. He currently serves as Deputy Secretary-General of the Embodied Intelligence Committee of Jiangsu Information Technology Application Society. His current research focuses on artificial intelligence technologies for drug discovery and translational applications. He has led one national-level project and participated as a key member in multiple national and provincial science and technology projects. He has published over 40 papers in leading international venues including TCSVT, TCI, and ICME, with one ESI Highly Cited Paper; he has been granted 3 invention patents and registered 12 software copyrights.',
             ],
             workTitle: 'Work Experience',
             work: [
@@ -263,10 +272,9 @@ export default function Page() {
             ],
             researchHeading: 'Research Areas',
             researchSubtitle:
-                'Focused on pharmaceutical AI, multimodal representation learning, and large models and their applications.',
+                'Focused on domain-specific large models and multi-agent systems, multimodal representation learning, embodied cognition, and affordance.',
             achievementsHeading: 'Academic Achievements',
-            achievementsSubtitle:
-                'Focused on pharmaceutical AI and multimodal learning, with sustained outputs including high-quality publications.',
+            achievementsSubtitle: 'Focused on pharmaceutical AI and multimodal learning.',
             honorsTitle: 'Selected Honors',
             papersTitle: 'Research Publications',
             patentsTitle: 'Invention Patents',
@@ -277,13 +285,13 @@ export default function Page() {
             ],
             admissionTitle: 'Admission',
             admissionText:
-                'Prospective students interested in pharmaceutical AI, multimodal representation learning, and large models and their applications are welcome to get in touch.',
+                'Prospective students interested in domain-specific large models and multi-agent systems, multimodal representation learning, embodied cognition, and affordance are welcome to get in touch.',
             admissionLabel: 'Admission Area',
-            admissionValue: 'Pharmaceutical Artificial Intelligence',
+            admissionValue: 'AI Pharmacy; Medical Big Data and Artificial Intelligence',
             contactTitle: 'Intellectual Property',
             contactText:
                 'Invention patents and software copyrights covering multimodal perception, object detection, object tracking, and medical instrument grasping.',
-            footer: '© 2026 Ruichao Hou Academic Website | Last updated: June 9, 2026',
+            footer: '© 2026 Ruichao Hou Academic Website | Contact: rchou@cpu.edu.cn',
         },
     }[language];
 
@@ -306,28 +314,28 @@ export default function Page() {
 
     const researchAreas = [
         {
-            title: isZh ? '药学人工智能' : 'Pharmaceutical Artificial Intelligence',
-            visual: 'pharma',
+            title: isZh ? '垂类大模型及多智能体' : 'Domain-Specific Large Models and Multi-Agent Systems',
+            visual: 'agents',
             description: isZh
-                ? '面向药物研发、药物重定位、虚拟细胞、药学数据分析与智能辅助决策，探索人工智能方法在药学场景中的创新应用。'
-                : 'Developing AI methods for drug discovery, drug repositioning, virtual cells, pharmaceutical data analysis, and intelligent decision support.',
-            tags: ['Pharma AI', 'Drug Repositioning', 'Virtual Cell'],
+                ? '面向药学与生物医药场景，研究垂类大模型的知识增强、工具调用、智能体协同与任务规划方法，推动复杂科研流程的自动化与智能化。'
+                : 'Developing domain-specific large models for pharmaceutical and biomedical scenarios, with emphasis on knowledge augmentation, tool use, multi-agent collaboration, and task planning for intelligent scientific workflows.',
+            tags: ['Domain LLMs', 'Multi-Agent Systems', 'AI for Science'],
         },
         {
             title: isZh ? '多模态表征学习' : 'Multimodal Representation Learning',
             visual: 'multimodal',
             description: isZh
-                ? '研究图像、文本、多组学、结构化数据等多源信息的统一表征、融合建模和跨模态理解方法。'
-                : 'Learning unified representations, fusion models, and cross-modal understanding from images, text, multi-omics, and structured data.',
-            tags: ['Representation Learning', 'Multi-omics', 'Multimodal Fusion'],
+                ? '围绕图像、文本、多组学和结构化数据等多源信息，研究统一表征、跨模态对齐、融合推理与鲁棒学习方法。'
+                : 'Learning unified representations, cross-modal alignment, fusion reasoning, and robust multimodal models from images, text, multi-omics, and structured data.',
+            tags: ['Multimodal Learning', 'Multi-omics', 'Representation'],
         },
         {
-            title: isZh ? '大模型及其应用' : 'Large Models and Applications',
-            visual: 'model',
+            title: isZh ? '具身认知及可供性' : 'Embodied Cognition and Affordance',
+            visual: 'embodied',
             description: isZh
-                ? '围绕大模型的专业知识理解、复杂任务推理、科学研究辅助和垂直领域落地开展研究。'
-                : 'Exploring domain knowledge understanding, complex reasoning, scientific research assistance, and vertical applications of large models.',
-            tags: ['Large Models', 'LLM Application', 'Embodied Intelligence'],
+                ? '面向智能体与真实环境交互，研究具身感知、认知推理、动作决策和可供性建模，探索人工智能系统的可解释交互能力。'
+                : 'Studying embodied perception, cognitive reasoning, action decision-making, and affordance modeling for intelligent agents interacting with real-world environments.',
+            tags: ['Embodied AI', 'Affordance', 'Cognitive Reasoning'],
         },
     ];
 
@@ -350,16 +358,16 @@ export default function Page() {
 
     const honors = isZh
         ? [
-              '2026年第十五届“挑战杯”中国大学生创业计划竞赛江苏省一等奖指导教师',
-              '2025年第十九届“挑战杯”全国大学生课外学术科技作品竞赛人工智能+应用赛全国一等奖指导教师',
+              '2026年“挑战杯”创业计划竞赛江苏省一等奖指导教师',
+              '2025年“挑战杯”学术科技作品竞赛人工智能+应用赛全国一等奖指导教师',
               '2025年中国造船工程学会科技进步奖一等奖',
               '2025年江苏省信息技术应用学会青年科技奖',
               '2023年江苏省信息技术应用学会科学技术奖一等奖',
               '2022年南京大学优秀博士创新能力提升计划资助',
           ]
         : [
-              '2026 Advisor of a Jiangsu provincial first-prize team, 15th “Challenge Cup” Chinese College Students Entrepreneurship Plan Competition',
-              '2025 Advisor of a national first-prize team, 19th “Challenge Cup” National College Students Extracurricular Academic Science and Technology Works Competition AI+Application Track',
+              '2026 Advisor of a Jiangsu provincial first-prize team, “Challenge Cup” Entrepreneurship Plan Competition',
+              '2025 Advisor of a national first-prize team, “Challenge Cup” Academic Science and Technology Works Competition AI+Application Track',
               '2025 First Prize, Science and Technology Progress Award, Chinese Society of Naval Architects and Marine Engineers',
               '2025 Young Scientist Award, Jiangsu Information Technology Application Society',
               '2023 First Prize, Science and Technology Award, Jiangsu Information Technology Application Society',
@@ -373,36 +381,36 @@ export default function Page() {
                 {
                     title: 'DSKFuse: Passive-Active Distillation Learning for Multi-modal Image Fusion via Dynamic Sparse Kansformer',
                     authors: 'Zhaisheng Ding, Ruichao Hou, Yunzhe Men, Shengyang Luan, Yanyu Liu, Kangjian He, and Shidong Xie',
-                    venue: 'Expert Systems with Applications, 2026, 303:130610',
+                    venue: 'Expert Systems with Applications (ESWA), 2026, 303:130610',
                 },
                 {
                     title: 'Panoptic Scene Graph Grounded Training-Free Image Editing With Mutually Exclusive Attention Manipulation',
-                    authors: 'Yunqing He, Ruichao Hou, Jia Bei, Tongwei Ren',
+                    authors: 'Yunqing He, Ruichao Hou*, Jia Bei, Tongwei Ren',
                     venue: 'IET Computer Vision (IETCV), 2026, 20(1), e70069',
                 },
                 {
                     title: 'Thermal Crowd Counting by Distilling Multi-modal Knowledge',
-                    authors: 'Xiaoxu Liu, Yi Shi, Ruichao Hou, and Tongwei Ren',
+                    authors: 'Xiaoxu Liu, Yi Shi, Ruichao Hou*, and Tongwei Ren',
                     venue: 'Pattern Recognition Letters (PRL), 2026',
                 },
                 {
                     title: 'Learning Frequency and Memory-aware Prompts for Multi-modal Object Tracking',
-                    authors: 'Boyue Xu, Ruichao Hou, Tongwei Ren, Dongming Zhou, Gangshan Wu, and Jinde Cao',
+                    authors: 'Boyue Xu, Ruichao Hou*, Tongwei Ren, Dongming Zhou, Gangshan Wu, and Jinde Cao',
                     venue: 'Pattern Recognition (PR), 2026',
                 },
                 {
                     title: 'STIFormer: RGB-T Tracking via Spatial-Temporal Interaction Transformer',
-                    authors: 'Boyue Xu, Yaqun Fang, Ruichao Hou, and Tongwei Ren',
+                    authors: 'Boyue Xu, Yaqun Fang, Ruichao Hou*, and Tongwei Ren',
                     venue: 'Image and Vision Computing (IVC), 2026, 168:105929',
                 },
                 {
                     title: 'Cross-View and Cross-Modal Contrastive Learning for Radar Object Detection',
-                    authors: 'Qiaolong Qian, Yi Shi, Ruichao Hou, Haoyu Qin, and Gangshan Wu',
+                    authors: 'Qiaolong Qian, Yi Shi, Ruichao Hou*, Haoyu Qin, and Gangshan Wu',
                     venue: 'IEEE Signal Processing Letters (SPL), 2026, 33:594-598',
                 },
                 {
                     title: 'Relationship Representation Diversity Enhancement for Scene Graph Generation',
-                    authors: 'Yunqing He, Ruichao Hou, Jia Bei, and Tongwei Ren',
+                    authors: 'Yunqing He, Ruichao Hou*, Jia Bei, and Tongwei Ren',
                     venue: 'Computational Visual Media Journal (CVMJ), 2026',
                 },
             ],
@@ -413,12 +421,12 @@ export default function Page() {
                 {
                     title: 'X Modality Assisting RGBT Object Tracking',
                     authors: 'Zhaisheng Ding, Haiyan Li, Ruichao Hou, Yanyu Liu, and Shidong Xie',
-                    venue: 'Applied Intelligence, 2025, 55(11):775',
+                    venue: 'Applied Intelligence (APIN), 2025, 55(11):775',
                 },
                 {
                     title: 'ACL-Net: Attribute-aware Contrastive Learning Network for Medical Image Fusion',
                     authors: 'Yanyu Liu, Ruichao Hou, Zhaisheng Ding, Dongming Zhou, and Jinde Cao',
-                    venue: 'IEEE Signal Processing Letters, 2025',
+                    venue: 'IEEE Signal Processing Letters (SPL), 2025',
                 },
                 {
                     title: 'HyPSAM: Hybrid Prompt-driven Segment Anything Model for RGB-Thermal Salient Object Detection',
@@ -427,12 +435,12 @@ export default function Page() {
                 },
                 {
                     title: 'Mamba4SOD: RGB-T Salient Object Detection Using Mamba-Based Fusion Module',
-                    authors: 'Yi Xu, Ruichao Hou, Ziheng Qi, and Tongwei Ren',
+                    authors: 'Yi Xu, Ruichao Hou*, Ziheng Qi, and Tongwei Ren',
                     venue: 'IET Computer Vision (IETCV), 2025, 19(1), e70033',
                 },
                 {
                     title: 'KAN-SAM: Kolmogorov-Arnold Network Guided Segment Anything Model for RGB-T Salient Object Detection',
-                    authors: 'Xingyuan Li, Ruichao Hou, Tongwei Ren, and Gangshan Wu',
+                    authors: 'Xingyuan Li, Ruichao Hou*, Tongwei Ren, and Gangshan Wu',
                     venue: "IEEE International Conference on Multimedia and Expo (ICME'25), Nantes, France, 2025",
                 },
             ],
@@ -442,13 +450,13 @@ export default function Page() {
             papers: [
                 {
                     title: 'RGB-D Video Object Segmentation via Enhanced Multi-store Feature Memory',
-                    authors: 'Boyue Xu, Ruichao Hou, Tongwei Ren and Gangshan Wu',
+                    authors: 'Boyue Xu, Ruichao Hou*, Tongwei Ren and Gangshan Wu',
                     venue: "ACM International Conference on Multimedia Retrieval (ICMR'24), Phuket, Thailand, 2024",
                 },
                 {
                     title: 'Jointly Modeling Association and Motion Cues for Robust Infrared UAV Tracking',
                     authors: 'Boyue Xu, Ruichao Hou, Jia Bei, Tongwei Ren and Gangshan Wu',
-                    venue: 'The Visual Computer, 2024',
+                    venue: 'The Visual Computer (TVC), 2024',
                 },
             ],
         },
@@ -473,12 +481,17 @@ export default function Page() {
                 {
                     title: 'An Improved Hybrid Network With a Transformer Module for Medical Image Fusion',
                     authors: 'Yanyu Liu, Yongsheng Zang, Dongming Zhou, Jinde Cao, Rencan Nie, Ruichao Hou, Zhaisheng Ding, and Jiatian Mei',
-                    venue: 'IEEE Journal of Biomedical and Health Informatics, 2023, 27:3489-3500',
+                    venue: 'IEEE Journal of Biomedical and Health Informatics (JBHI), 2023, 27:3489-3500',
                 },
                 {
                     title: 'Green Fluorescent Protein and Phase Contrast Image Fusion via Spectral TV Filter-Based Decomposition',
                     authors: 'Yanyu Liu, Dongming Zhou, Rencan Nie, Ruichao Hou, Zhaisheng Ding, Weidai Xia, and Miao Li',
-                    venue: 'Biomedical Signal Processing and Control, 2023, 79:104265',
+                    venue: 'Biomedical Signal Processing and Control (BSPC), 2023, 79:104265',
+                },
+                {
+                    title: 'A Robust Infrared and Visible Image Fusion Framework via Multi-Receptive-Field Attention and Color Visual Perception',
+                    authors: 'Zhaisheng Ding, Haiyan Li, Dongming Zhou, Yanyu Liu, and Ruichao Hou',
+                    venue: 'Applied Intelligence (APIN), 2023, 53(7):8114-8132',
                 },
             ],
         },
@@ -493,7 +506,12 @@ export default function Page() {
                 {
                     title: 'CIRNet: An Improved RGBT Tracking via Cross-Modality Interaction and Re-Identification',
                     authors: 'Weidai Xia, Dongming Zhou, Jinde Cao, Yanyu Liu, and Ruichao Hou',
-                    venue: 'Neurocomputing, 2022, 493:327-339',
+                    venue: 'Neurocomputing (NEUCOM), 2022, 493:327-339',
+                },
+                {
+                    title: 'TSE_Fuse: Two Stage Enhancement Method Using Attention Mechanism and Feature-Linking Model for Infrared and Visible Image Fusion',
+                    authors: 'Yanyu Liu, Dongming Zhou, Rencan Nie, Zhaisheng Ding, Yanbu Guo, Xiaoli Ruan, Weidai Xia, and Ruichao Hou',
+                    venue: 'Digital Signal Processing (DSP), 2022, 123:103387',
                 },
             ],
         },
@@ -501,9 +519,14 @@ export default function Page() {
             year: '2021',
             papers: [
                 {
+                    title: 'CMFA_Net: A Cross-Modal Feature Aggregation Network for Infrared-Visible Image Fusion',
+                    authors: 'Zhaisheng Ding, Haiyan Li, Dongming Zhou, Hongsong Li, Yanyu Liu, and Ruichao Hou',
+                    venue: 'Infrared Physics & Technology (INFPHY), 2021, 118:103905',
+                },
+                {
                     title: 'Siamese Networks and Multi-Scale Local Extrema Scheme for Multimodal Brain Medical Image Fusion',
                     authors: 'Zhaisheng Ding, Dongming Zhou, Haiyan Li, Ruichao Hou, and Yanyu Liu',
-                    venue: 'Biomedical Signal Processing and Control, 2021, 68:102697',
+                    venue: 'Biomedical Signal Processing and Control (BSPC), 2021, 68:102697',
                 },
             ],
         },
@@ -513,17 +536,22 @@ export default function Page() {
                 {
                     title: 'VIF-Net: An Unsupervised Framework for Infrared and Visible Image Fusion',
                     authors: 'Ruichao Hou, Dongming Zhou, Rencan Nie, Dong Liu, Licheng Xiong, Yan Guo, and Chuanbo Yu',
-                    venue: 'IEEE Transactions on Computational Imaging, 2020, 6:640-651',
+                    venue: 'IEEE Transactions on Computational Imaging (TCI), 2020, 6:640-651',
                 },
                 {
                     title: 'Robust Spiking Cortical Model and Total-Variational Decomposition for Multimodal Medical Image Fusion',
                     authors: 'Yanyu Liu, Dongming Zhou, Rencan Nie, Ruichao Hou, Zhaisheng Ding, Yanbu Guo, and Jinwei Zhou',
-                    venue: 'Biomedical Signal Processing and Control, 2020, 61:101996',
+                    venue: 'Biomedical Signal Processing and Control (BSPC), 2020, 61:101996',
                 },
                 {
                     title: 'Attentive Gated Neural Networks for Identifying Chromatin Accessibility',
                     authors: 'Yanbu Guo, Dongming Zhou, Weihua Li, Rencan Nie, Ruichao Hou, and Chengli Zhou',
-                    venue: 'Neural Computing and Applications, 2020, 32(19):15557-15571',
+                    venue: 'Neural Computing and Applications (NCAA), 2020, 32(19):15557-15571',
+                },
+                {
+                    title: 'Construction of High Dynamic Range Image Based on Gradient Information Transformation',
+                    authors: 'Yanyu Liu, Dongming Zhou, Rencan Nie, Ruichao Hou, and Zhaisheng Ding',
+                    venue: 'IET Image Processing (IET-IPR), 2020, 14(6)',
                 },
             ],
         },
@@ -533,12 +561,12 @@ export default function Page() {
                 {
                     title: 'Infrared and Visible Images Fusion Using Visual Saliency and Optimized Spiking Cortical Model in Non-Subsampled Shearlet Transform Domain',
                     authors: 'Ruichao Hou, Rencan Nie, Dongming Zhou, Jinde Cao, and Dong Liu',
-                    venue: 'Multimedia Tools and Applications, 2019, 78(20):28609-28632',
+                    venue: 'Multimedia Tools and Applications (MTAP), 2019, 78(20):28609-28632',
                 },
                 {
                     title: 'Brain CT and MRI Medical Image Fusion Using Convolutional Neural Networks and a Dual-Channel Spiking Cortical Model',
                     authors: 'Ruichao Hou, Dongming Zhou, Rencan Nie, Dong Liu, and Xiaoli Ruan',
-                    venue: 'Medical & Biological Engineering & Computing, 2019, 57(5)',
+                    venue: 'Medical & Biological Engineering & Computing (MBEC), 2019, 57(5)',
                 },
             ],
         },
@@ -791,8 +819,8 @@ export default function Page() {
                                     ['about', text.nav.about],
                                     ['research', text.nav.research],
                                     ['achievements', text.nav.achievements],
-                                    ['admission', text.nav.admission],
                                     ['contact', text.nav.contact],
+                                    ['admission', text.nav.admission],
                                 ].map(([section, label]) => (
                                     <button
                                         key={section}
@@ -987,9 +1015,9 @@ export default function Page() {
                                                 <ResearchVisual
                                                     type={
                                                         area.visual as
-                                                            | 'pharma'
+                                                            | 'agents'
                                                             | 'multimodal'
-                                                            | 'model'
+                                                            | 'embodied'
                                                     }
                                                 />
                                             </div>
@@ -1051,7 +1079,7 @@ export default function Page() {
                                                                         {paper.title}
                                                                     </p>
                                                                     <p className="mt-1 text-sm leading-relaxed text-slate-600">
-                                                                        {paper.authors}
+                                                                        <HighlightAuthor authors={paper.authors} />
                                                                     </p>
                                                                     <p className="mt-1 text-sm leading-relaxed text-slate-500">
                                                                         {paper.venue}
