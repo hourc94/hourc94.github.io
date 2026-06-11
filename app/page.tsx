@@ -842,6 +842,29 @@ export default function Page() {
                                 </button>
                             </div>
                         </nav>
+                        <div className="md:hidden mt-4 -mx-2 overflow-x-auto pb-1">
+                            <div className="flex min-w-max gap-2 px-2">
+                                {[
+                                    ['about', text.nav.about],
+                                    ['research', text.nav.research],
+                                    ['achievements', text.nav.achievements],
+                                    ['contact', text.nav.contact],
+                                    ['admission', text.nav.admission],
+                                ].map(([section, label]) => (
+                                    <button
+                                        key={section}
+                                        onClick={() => setActiveSection(section as Section)}
+                                        className={`whitespace-nowrap px-3 py-2 rounded-lg text-sm transition-all duration-300 ${
+                                            activeSection === section
+                                                ? 'bg-blue-600 text-white font-medium shadow-md'
+                                                : 'bg-white/70 text-slate-600 hover:text-blue-600 hover:bg-blue-50'
+                                        }`}
+                                    >
+                                        {label}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </header>
 
