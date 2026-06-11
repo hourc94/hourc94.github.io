@@ -103,7 +103,8 @@ function ResearchVisual({ type }: { type: 'agents' | 'multimodal' | 'embodied' }
                 </g>
                 <circle cx="142" cy="75" r="26" fill="#ffffff" opacity="0.9" />
                 <path d="M116 75h-18M168 75h20M124 61l-26-10M124 89l-26 10M160 61l28-10M160 89l28 10" stroke="#94a3b8" strokeWidth="3" strokeLinecap="round" />
-                <path d="M130 70h24M130 80h24M142 63v24" stroke="#4f46e5" strokeWidth="4" strokeLinecap="round" />
+                <circle cx="142" cy="75" r="17" fill="#eef2ff" stroke="#4f46e5" strokeWidth="3" />
+                <path d="M132 75h20M142 65v20" stroke="#4f46e5" strokeWidth="5" strokeLinecap="round" />
                 <text x="112" y="121" fill="#334155" fontSize="12" fontWeight="700">
                     Multi-omics Fusion
                 </text>
@@ -1142,8 +1143,12 @@ export default function Page() {
                         {activeSection === 'admission' && (
                             <div className="max-w-4xl mx-auto">
                                 <div className="glass-effect rounded-2xl shadow-xl p-10 subtle-hover text-center">
-                                    <div className="w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full mx-auto mb-8 flex items-center justify-center">
-                                        <span className="text-3xl">🎓</span>
+                                    <div className="w-24 h-24 bg-white rounded-full mx-auto mb-8 flex items-center justify-center border border-blue-100 shadow-md p-3">
+                                        <img
+                                            src={withBasePath('/cpu-logo.png')}
+                                            alt={isZh ? '中国药科大学标志' : 'China Pharmaceutical University logo'}
+                                            className="h-full w-full object-contain"
+                                        />
                                     </div>
                                     <h2 className="text-3xl font-bold text-slate-800 mb-4">
                                         {text.admissionTitle}
