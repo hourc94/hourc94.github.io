@@ -213,7 +213,8 @@ export default function Page() {
                 '欢迎对药学人工智能、多模态表征学习、大模型及其应用感兴趣的同学联系交流。',
             ],
             researchHeading: '研究方向',
-            researchSubtitle: '聚焦垂类大模型及多智能体、多模态表征学习、具身认知及可供性等方向。',
+            researchSubtitle:
+                '隶属于全维智药（OmniDrug）团队，关注面向药物发现的人工智能前沿技术研究和落地应用，包括：垂类大模型及多智能体、多模态融合与表征学习、具身智能与无人化实验等，与南京大学MAGUS研究组保持紧密合作。',
             achievementsHeading: '学术成果',
             achievementsSubtitle: '聚焦药学人工智能与多模态学习。',
             honorsTitle: '代表性荣誉',
@@ -226,7 +227,7 @@ export default function Page() {
             ],
             admissionTitle: '招生信息',
             admissionText:
-                '欢迎对垂类大模型及多智能体、多模态表征学习、具身认知及可供性等方向感兴趣的同学联系交流。',
+                '长期招收对药学人工智能、计算机交叉、具身智能等前沿交叉领域感兴趣的博士生、硕士生和本科生。如果您希望加入我们，欢迎联系。',
             admissionLabel: '招生专业',
             admissionValue: '人工智能药学、医药大数据与人工智能',
             contactTitle: '知识产权',
@@ -273,7 +274,7 @@ export default function Page() {
             ],
             researchHeading: 'Research Areas',
             researchSubtitle:
-                'Focused on domain-specific large models and multi-agent systems, multimodal representation learning, embodied cognition, and affordance.',
+                'Affiliated with the OmniDrug team, focusing on frontier AI technologies and translational applications for drug discovery, including domain-specific large models and multi-agent systems, multimodal fusion and representation learning, embodied intelligence, and autonomous experimentation, while maintaining close collaboration with the MAGUS research group at Nanjing University.',
             achievementsHeading: 'Academic Achievements',
             achievementsSubtitle: 'Focused on pharmaceutical AI and multimodal learning.',
             honorsTitle: 'Selected Honors',
@@ -286,7 +287,7 @@ export default function Page() {
             ],
             admissionTitle: 'Admission',
             admissionText:
-                'Prospective students interested in domain-specific large models and multi-agent systems, multimodal representation learning, embodied cognition, and affordance are welcome to get in touch.',
+                'We continuously welcome Ph.D., master’s, and undergraduate students interested in frontier interdisciplinary areas such as pharmaceutical AI, computer science intersections, and embodied intelligence. If you would like to join us, please feel free to contact us.',
             admissionLabel: 'Admission Area',
             admissionValue: 'AI Pharmacy; Medical Big Data and Artificial Intelligence',
             contactTitle: 'Intellectual Property',
@@ -317,25 +318,28 @@ export default function Page() {
         {
             title: isZh ? '垂类大模型及多智能体' : 'Domain-Specific Large Models and Multi-Agent Systems',
             visual: 'agents',
+            image: '/research-large-model.png',
             description: isZh
-                ? '面向药学与生物医药场景，研究垂类大模型的知识增强、工具调用、智能体协同与任务规划方法，推动复杂科研流程的自动化与智能化。'
-                : 'Developing domain-specific large models for pharmaceutical and biomedical scenarios, with emphasis on knowledge augmentation, tool use, multi-agent collaboration, and task planning for intelligent scientific workflows.',
+                ? '聚焦生物医药场景，研究垂域大模型的知识增强、工具调用、多智能体协同与任务规划，驱动复杂科研流程的自动化与智能化。'
+                : 'Focusing on biomedical scenarios, studying knowledge augmentation, tool use, multi-agent collaboration, and task planning for domain-specific large models to drive automated and intelligent complex scientific workflows.',
             tags: ['Domain LLMs', 'Multi-Agent Systems', 'AI for Science'],
         },
         {
-            title: isZh ? '多模态表征学习' : 'Multimodal Representation Learning',
+            title: isZh ? '多模态融合与表征学习' : 'Multimodal Fusion and Representation Learning',
             visual: 'multimodal',
+            image: '/research-multimodal.png',
             description: isZh
-                ? '围绕图像、文本、多组学和结构化数据等多源信息，研究统一表征、跨模态对齐、融合推理与鲁棒学习方法。'
-                : 'Learning unified representations, cross-modal alignment, fusion reasoning, and robust multimodal models from images, text, multi-omics, and structured data.',
+                ? '面向图像、文本、多组学及结构化等多源数据，攻克统一表征、跨模态对齐、融合推理与鲁棒学习，支撑药物研发信息深度整合。'
+                : 'Working with images, text, multi-omics, structured data, and other heterogeneous sources to address unified representation, cross-modal alignment, fusion reasoning, and robust learning for deep integration of drug R&D information.',
             tags: ['Multimodal Learning', 'Multi-omics', 'Representation'],
         },
         {
-            title: isZh ? '具身认知及可供性' : 'Embodied Cognition and Affordance',
+            title: isZh ? '具身智能与无人化实验' : 'Embodied Intelligence and Autonomous Experimentation',
             visual: 'embodied',
+            image: '/F3.png',
             description: isZh
-                ? '面向智能体与真实环境交互，研究具身感知、认知推理、动作决策和可供性建模，探索人工智能系统的可解释交互能力。'
-                : 'Studying embodied perception, cognitive reasoning, action decision-making, and affordance modeling for intelligent agents interacting with real-world environments.',
+                ? '针对无人化实验需求，研究具身感知、认知推理、动作决策与可供性建模，构建可解释交互的自主实验系统，加速药物研发进程。'
+                : 'Addressing autonomous experimentation needs by studying embodied perception, cognitive reasoning, action decision-making, and affordance modeling to build interpretable and interactive autonomous laboratory systems that accelerate drug R&D.',
             tags: ['Embodied AI', 'Affordance', 'Cognitive Reasoning'],
         },
     ];
@@ -1035,22 +1039,19 @@ export default function Page() {
                                             className="glass-effect rounded-2xl shadow-lg p-8 subtle-hover animate-fade-in"
                                             style={{ animationDelay: `${index * 0.1}s` }}
                                         >
-                                            <div className="mb-6 overflow-hidden rounded-2xl border border-slate-100 bg-white/70">
-                                                <ResearchVisual
-                                                    type={
-                                                        area.visual as
-                                                            | 'agents'
-                                                            | 'multimodal'
-                                                            | 'embodied'
-                                                    }
-                                                />
-                                            </div>
                                             <h3 className="text-xl font-bold text-slate-800 mb-4">
                                                 {area.title}
                                             </h3>
                                             <p className="text-slate-600 leading-relaxed mb-5">
                                                 {area.description}
                                             </p>
+                                            <div className="mb-6 aspect-[16/10] overflow-hidden rounded-2xl border border-slate-100 bg-white/80 p-2">
+                                                <img
+                                                    src={withBasePath(area.image)}
+                                                    alt={area.title}
+                                                    className="h-full w-full object-contain"
+                                                />
+                                            </div>
                                             <div className="flex flex-wrap gap-2">
                                                 {area.tags.map((tag) => (
                                                     <span
