@@ -26,7 +26,18 @@ function MailIcon() {
             aria-hidden="true"
             className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-blue-50 text-blue-600"
         >
-            ✉
+            <svg
+                viewBox="0 0 24 24"
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            >
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="M3 7l9 6 9-6" />
+            </svg>
         </span>
     );
 }
@@ -190,6 +201,7 @@ export default function Page() {
             admissionMajor: '招生专业：人工智能药学、医药大数据与人工智能',
             university: '中国药科大学',
             address: '江苏省南京市鼓楼区童家巷24号',
+            postalCode: '邮编：210009',
             team: '团队主页',
             introTitle: '个人简介',
             intro: [
@@ -250,6 +262,7 @@ export default function Page() {
             admissionMajor: 'Admission Areas: AI Pharmacy; Medical Big Data and Artificial Intelligence',
             university: 'China Pharmaceutical University',
             address: 'No. 24 Tongjiaxiang, Gulou District, Nanjing, Jiangsu, China',
+            postalCode: 'Postcode: 210009',
             team: 'Team Website',
             introTitle: 'Biography',
             intro: [
@@ -905,6 +918,7 @@ export default function Page() {
                                             <p>🎓 {text.admissionMajor}</p>
                                             <p>🏫 {text.university}</p>
                                             <p>📍 {text.address}</p>
+                                            <p>✉️ {text.postalCode}</p>
                                             <a
                                                 href="https://scholar.google.com/citations?user=r_pnp9AAAAAJ&hl=zh-CN"
                                                 target="_blank"
