@@ -297,7 +297,7 @@ export default function Page() {
             workTitle: 'Work Experience',
             work: [
                 '2024-2026, Software Institute, Nanjing University, Assistant Researcher',
-                '2026-Present, School of Biomedical Engineering Excellence, China Pharmaceutical University, Associate Professor',
+                '2026-Present, School of Elite Biomedical Engineers, China Pharmaceutical University, Associate Professor',
             ],
             serviceTitle: 'Academic Service',
             service: [
