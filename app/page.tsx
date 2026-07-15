@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useState } from 'react';
 
@@ -230,7 +230,7 @@ export default function Page() {
             collegeWebsite: '学院官网',
             introTitle: '个人简介',
             intro: [
-                '侯瑞超，男，中国药科大学副教授、硕士生导师。毕业于南京大学计算机科学与技术系，获得工学博士学位，并入选南京大学优秀博士创新能力提升计划。现担任江苏省信息技术应用学会具身智能专委会副秘书长。目前主要从事面向药物发现的人工智能技术研究和转化落地。先后主持国家级项目1项，作为骨干成员参与多项国家级、省部级科技项目。在TCSVT、TCI、ICME等国际高水平刊物上发表论文40余篇，其中1篇入选ESI高被引论文；授权发明专利3项，登记软件著作权12项。',
+                '侯瑞超，男，中国药科大学副教授、硕士生导师。毕业于南京大学计算机科学与技术系，获得工学博士学位，并入选南京大学优秀博士创新能力提升计划。现担任江苏省信息技术应用学会具身智能专委会副秘书长。目前主要从事面向药物发现的人工智能技术研究和转化落地。先后主持国家级项目1项，作为骨干成员参与多项国家级、省部级科技项目。在TCSVT、TCI、ICME等国际高水平刊物上发表论文40余篇，其中2篇入选ESI高被引论文；授权发明专利3项，登记软件著作权12项。',
             ],
             workTitle: '工作经历',
             work: [
@@ -259,7 +259,7 @@ export default function Page() {
             patentsTitle: '发明专利',
             softwareTitle: '软件著作权',
             papers: [
-                '在 TCSVT、TCI、PR 等国际高水平刊物上发表论文40余篇，引用超过1000余次，其中1篇入选 ESI 高被引论文。',
+                '在 TCSVT、TCI、PR 等国际高水平刊物上发表论文40余篇，引用超过1000余次，其中2篇入选 ESI 高被引论文。',
                 '申请或授权发明专利13项，登记软件著作权12项。',
             ],
             admissionTitle: '招生信息',
@@ -292,7 +292,7 @@ export default function Page() {
             collegeWebsite: 'College Profile',
             introTitle: 'Biography',
             intro: [
-                'Ruichao Hou is an Associate Professor and Master Supervisor at China Pharmaceutical University. He received his Ph.D. in Engineering from the Department of Computer Science and Technology, Nanjing University, and was selected for the Excellent Doctoral Innovation Capability Enhancement Program of Nanjing University. He currently serves as Deputy Secretary-General of the Embodied Intelligence Committee of Jiangsu Information Technology Application Society. His current research focuses on artificial intelligence technologies for drug discovery and translational applications. He has led one national-level project and participated as a key member in multiple national and provincial science and technology projects. He has published over 40 papers in leading international venues including TCSVT, TCI, and ICME, with one ESI Highly Cited Paper; he has been granted 3 invention patents and registered 12 software copyrights.',
+                'Ruichao Hou is an Associate Professor and Master Supervisor at China Pharmaceutical University. He received his Ph.D. in Engineering from the Department of Computer Science and Technology, Nanjing University, and was selected for the Excellent Doctoral Innovation Capability Enhancement Program of Nanjing University. He currently serves as Deputy Secretary-General of the Embodied Intelligence Committee of Jiangsu Information Technology Application Society. His current research focuses on artificial intelligence technologies for drug discovery and translational applications. He has led one national-level project and participated as a key member in multiple national and provincial science and technology projects. He has published over 40 papers in leading international venues including TCSVT, TCI, and ICME, with two ESI Highly Cited Papers; he has been granted 3 invention patents and registered 12 software copyrights.',
             ],
             workTitle: 'Work Experience',
             work: [
@@ -321,7 +321,7 @@ export default function Page() {
             patentsTitle: 'Invention Patents',
             softwareTitle: 'Software Copyrights',
             papers: [
-                'Published over 40 papers in leading international journals including TCSVT, TCI, and PR, with more than 1,000 citations and one ESI Highly Cited Paper.',
+                'Published over 40 papers in leading international journals including TCSVT, TCI, and PR, with more than 1,000 citations and two ESI Highly Cited Papers.',
                 'Filed or granted 13 invention patents and registered 12 software copyrights.',
             ],
             admissionTitle: 'Admission',
@@ -395,13 +395,14 @@ export default function Page() {
             label: isZh ? '论文引用' : 'Citations',
             value: scholarCitations,
             description: isZh
-                ? `Google Scholar 引用 ${scholarCitations}，1篇论文入选 ESI 高被引论文。`
-                : `Google Scholar citations: ${scholarCitations}, including one ESI Highly Cited Paper.`,
+                ? `Google Scholar 引用 ${scholarCitations}，2篇论文入选 ESI 高被引论文。`
+                : `Google Scholar citations: ${scholarCitations}, including two ESI Highly Cited Papers.`,
         },
     ];
 
     const honors = isZh
         ? [
+              '2026年中国指挥与控制学会科技进步奖一等奖',
               '2026年“挑战杯”创业计划竞赛江苏省一等奖指导教师',
               '2025年“挑战杯”学术科技作品竞赛人工智能+应用赛全国一等奖指导教师',
               '2025年中国造船工程学会科技进步奖一等奖',
@@ -410,6 +411,7 @@ export default function Page() {
               '2022年南京大学优秀博士创新能力提升计划资助',
           ]
         : [
+              '2026 First Prize, Science and Technology Progress Award, Chinese Institute of Command and Control',
               '2026 Advisor of a Jiangsu provincial first-prize team, “Challenge Cup” Entrepreneurship Plan Competition',
               '2025 Advisor of a national first-prize team, “Challenge Cup” Academic Science and Technology Works Competition AI+Application Track',
               '2025 First Prize, Science and Technology Progress Award, Chinese Society of Naval Architects and Marine Engineers',
@@ -1298,3 +1300,4 @@ export default function Page() {
         </>
     );
 }
+
