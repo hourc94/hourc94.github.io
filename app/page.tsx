@@ -423,6 +423,16 @@ export default function Page() {
             year: '2026',
             papers: [
                 {
+                    title: 'Segmentation-Guided Transformer Network for Subtle Visual Relationship Detection',
+                    authors: 'Fan Yu, Hanxi Cao, Ruichao Hou*, and Tongwei Ren',
+                    venue: 'Multimedia Systems (MMS), 2026, 32:412, DOI: 10.1007/s00530-026-02486-5',
+                },
+                {
+                    title: 'Cross-Model and Attribute-Driven Dual-Stage Knowledge Distillation for Multimodal Medical Image Fusion',
+                    authors: 'Yanyu Liu, Chunxue Liu, Ruichao Hou, Zhaisheng Ding, Kangjian He, and Dongming Zhou',
+                    venue: 'Multimedia Systems (MMS), 2026, 32:418, DOI: 10.1007/s00530-026-02485-6',
+                },
+                {
                     title: 'DSKFuse: Passive-Active Distillation Learning for Multi-modal Image Fusion via Dynamic Sparse Kansformer',
                     authors: 'Zhaisheng Ding, Ruichao Hou, Yunzhe Men, Shengyang Luan, Yanyu Liu, Kangjian He, and Shidong Xie',
                     venue: 'Expert Systems with Applications (ESWA), 2026, 303:130610, DOI: 10.1016/j.eswa.2025.130610',
