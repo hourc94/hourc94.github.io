@@ -88,6 +88,33 @@ function WebsiteIcon() {
     );
 }
 
+function EsiTrophyIcon() {
+    return (
+        <span
+            aria-label="ESI 高被引论文"
+            title="ESI 高被引论文"
+            className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center text-red-600"
+        >
+            <svg
+                viewBox="0 0 24 24"
+                className="h-4.5 w-4.5"
+                fill="currentColor"
+                stroke="currentColor"
+                strokeWidth="0.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            >
+                <path d="M8 3h8v3.6c0 3.2-1.7 5.6-4 6.2-2.3-.6-4-3-4-6.2V3z" />
+                <path d="M8 5H4.8v1.4c0 2.2 1.3 3.7 3.4 4.1" />
+                <path d="M16 5h3.2v1.4c0 2.2-1.3 3.7-3.4 4.1" />
+                <path d="M11 12.5h2v4h-2z" />
+                <path d="M8.5 18.5h7v2h-7z" />
+                <path d="M10 16.5h4v2h-4z" />
+            </svg>
+        </span>
+    );
+}
+
 function ResearchVisual({ type }: { type: 'agents' | 'multimodal' | 'embodied' }) {
     if (type === 'agents') {
         return (
@@ -486,6 +513,7 @@ export default function Page() {
                 },
                 {
                     title: 'HyPSAM: Hybrid Prompt-driven Segment Anything Model for RGB-Thermal Salient Object Detection',
+                    esiHighlyCited: true,
                     authors: 'Ruichao Hou, Xingyuan Li, Tongwei Ren, Dongming Zhou, Gangshan Wu and Jinde Cao',
                     venue: 'IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2025, 36(3):2697-2712, DOI: 10.1109/TCSVT.2025.3613770',
                 },
@@ -591,6 +619,7 @@ export default function Page() {
             papers: [
                 {
                     title: 'VIF-Net: An Unsupervised Framework for Infrared and Visible Image Fusion',
+                    esiHighlyCited: true,
                     authors: 'Ruichao Hou, Dongming Zhou, Rencan Nie, Dong Liu, Licheng Xiong, Yan Guo, and Chuanbo Yu',
                     venue: 'IEEE Transactions on Computational Imaging (TCI), 2020, 6:640-651, DOI: 10.1109/TCI.2020.2965304',
                 },
@@ -1161,8 +1190,9 @@ export default function Page() {
                                                             >
                                                                 <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-blue-500"></span>
                                                                 <div>
-                                                                    <p className="font-semibold leading-relaxed text-slate-800">
-                                                                        {paper.title}
+                                                                    <p className="flex items-start gap-2 font-semibold leading-relaxed text-slate-800">
+                                                                        {paper.esiHighlyCited && <EsiTrophyIcon />}
+                                                                        <span>{paper.title}</span>
                                                                     </p>
                                                                     <p className="mt-1 text-sm leading-relaxed text-slate-600">
                                                                         <HighlightAuthor authors={paper.authors} />
