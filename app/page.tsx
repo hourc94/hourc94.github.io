@@ -237,7 +237,7 @@ export default function Page() {
 
     const text = {
         zh: {
-            headerName: '侯瑞超   博士',
+            headerName: '侯瑞超   副教授',
             nav: {
                 about: '关于我',
                 research: '研究方向',
@@ -272,9 +272,8 @@ export default function Page() {
             ],
             newsTitle: '动态',
             news: [
+                '2026年7月15日，荣获中国指挥与控制学会科技进步奖一等奖。',
                 '2026年6月7日，指导学生获第十五届“挑战杯”中国大学生创业计划竞赛江苏省一等奖。',
-                '2026年6月，个人学术主页上线。',
-                '欢迎对药学人工智能、多模态表征学习、大模型及其应用感兴趣的同学联系交流。',
             ],
             researchHeading: '研究方向',
             researchSubtitle:
@@ -299,7 +298,7 @@ export default function Page() {
             footer: '© 2026 侯瑞超个人学术网站 | 联系我：rchou@cpu.edu.cn',
         },
         en: {
-            headerName: 'Ruichao Hou, Ph.D.',
+            headerName: 'Ruichao Hou, Associate Professor',
             nav: {
                 about: 'About',
                 research: 'Research',
@@ -334,9 +333,8 @@ export default function Page() {
             ],
             newsTitle: 'News',
             news: [
+                'July 15, 2026: Received the First Prize of the Science and Technology Progress Award from the Chinese Institute of Command and Control.',
                 'June 7, 2026: Supervised students won the Jiangsu Provincial First Prize in the 15th “Challenge Cup” Chinese College Students Entrepreneurship Plan Competition.',
-                'June 2026: Personal academic homepage launched.',
-                'Prospective students interested in pharmaceutical AI, multimodal representation learning, and large models are welcome to get in touch.',
             ],
             researchHeading: 'Research Areas',
             researchSubtitle:
