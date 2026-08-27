@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useEffect, useState } from 'react';
 
@@ -285,7 +285,7 @@ export default function Page() {
             patentsTitle: '发明专利',
             softwareTitle: '软件著作权',
             papers: [
-                '在 TCSVT、TCI、PR 等国际高水平刊物上发表论文40余篇，引用超过1000余次，其中2篇入选 ESI 高被引论文。',
+                '在 TCSVT、PR、TCI 等国际高水平刊物上发表论文40余篇，引用超过1000余次，其中2篇入选 ESI 高被引论文。',
                 '申请或授权发明专利13项，登记软件著作权12项。',
             ],
             admissionTitle: '招生信息',
@@ -346,7 +346,7 @@ export default function Page() {
             patentsTitle: 'Invention Patents',
             softwareTitle: 'Software Copyrights',
             papers: [
-                'Published over 40 papers in leading international journals including TCSVT, TCI, and PR, with more than 1,000 citations and two ESI Highly Cited Papers.',
+                'Published over 40 papers in leading international journals including TCSVT, PR, and TCI, with more than 1,000 citations and two ESI Highly Cited Papers.',
                 'Filed or granted 13 invention patents and registered 12 software copyrights.',
             ],
             admissionTitle: 'Admission',
@@ -413,8 +413,8 @@ export default function Page() {
             label: isZh ? '论文发表' : 'Publications',
             value: '40+',
             description: isZh
-                ? '在 TCSVT、TCI、PR 等国际高水平刊物发表论文40余篇。'
-                : 'Published over 40 papers in leading venues including TCSVT, TCI, and PR.',
+                ? '在 TCSVT、PR、TCI 等国际高水平刊物发表论文40余篇。'
+                : 'Published over 40 papers in leading venues including TCSVT, PR, and TCI.',
         },
         {
             label: isZh ? '论文引用' : 'Citations',
@@ -1328,4 +1328,5 @@ export default function Page() {
         </>
     );
 }
+
 
