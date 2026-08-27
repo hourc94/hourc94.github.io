@@ -257,7 +257,7 @@ export default function Page() {
             collegeWebsite: '学院官网',
             introTitle: '个人简介',
             intro: [
-                '侯瑞超，男，中国药科大学副教授、硕士生导师。毕业于南京大学计算机科学与技术系，获得工学博士学位，并入选南京大学优秀博士创新能力提升计划。现担任江苏省信息技术应用学会具身智能专委会副秘书长。目前主要从事面向药物发现的人工智能技术研究和转化落地。先后主持国家级项目1项，作为骨干成员参与多项国家级、省部级科技项目。在TCSVT、TCI、ICME等国际高水平刊物上发表论文40余篇，其中2篇入选ESI高被引论文；授权发明专利3项，登记软件著作权12项。',
+                '侯瑞超，男，中国药科大学副教授、硕士生导师。毕业于南京大学计算机科学与技术系，获得工学博士学位，并入选南京大学优秀博士创新能力提升计划。现担任江苏省信息技术应用学会具身智能专委会副秘书长。目前主要从事面向药物发现的人工智能技术研究和转化落地。先后主持国家级项目1项，作为骨干成员参与多项国家级、省部级科技项目。在TCSVT、PR、TCI等国际高水平刊物上发表论文40余篇，其中2篇入选ESI高被引论文；授权发明专利3项，登记软件著作权12项。',
             ],
             workTitle: '工作经历',
             work: [
@@ -318,7 +318,7 @@ export default function Page() {
             collegeWebsite: 'College Profile',
             introTitle: 'Biography',
             intro: [
-                'Ruichao Hou is an Associate Professor and Master Supervisor at China Pharmaceutical University. He received his Ph.D. in Engineering from the Department of Computer Science and Technology, Nanjing University, and was selected for the Excellent Doctoral Innovation Capability Enhancement Program of Nanjing University. He currently serves as Deputy Secretary-General of the Embodied Intelligence Committee of Jiangsu Information Technology Application Society. His current research focuses on artificial intelligence technologies for drug discovery and translational applications. He has led one national-level project and participated as a key member in multiple national and provincial science and technology projects. He has published over 40 papers in leading international venues including TCSVT, TCI, and ICME, with two ESI Highly Cited Papers; he has been granted 3 invention patents and registered 12 software copyrights.',
+                'Ruichao Hou is an Associate Professor and Master Supervisor at China Pharmaceutical University. He received his Ph.D. in Engineering from the Department of Computer Science and Technology, Nanjing University, and was selected for the Excellent Doctoral Innovation Capability Enhancement Program of Nanjing University. He currently serves as Deputy Secretary-General of the Embodied Intelligence Committee of Jiangsu Information Technology Application Society. His current research focuses on artificial intelligence technologies for drug discovery and translational applications. He has led one national-level project and participated as a key member in multiple national and provincial science and technology projects. He has published over 40 papers in leading international venues including TCSVT, PR, and TCI, with two ESI Highly Cited Papers; he has been granted 3 invention patents and registered 12 software copyrights.',
             ],
             workTitle: 'Work Experience',
             work: [
@@ -1245,6 +1245,12 @@ export default function Page() {
                                     </h2>
                                     <p className="text-lg text-slate-600 mb-8">
                                         {text.admissionText}
+                                    </p>
+                                    <p className="mb-8 text-base font-semibold text-blue-700">
+                                        {isZh ? '邮箱：' : 'Email: '}
+                                        <a href="mailto:rchou@cpu.edu.cn" className="hover:text-blue-900">
+                                            rchou@cpu.edu.cn
+                                        </a>
                                     </p>
                                     <div className="bg-blue-50 rounded-2xl p-8 border border-blue-100">
                                         <p className="text-sm text-blue-600 font-semibold mb-2">
