@@ -618,7 +618,7 @@ export default function Page() {
                 {
                     title: 'VIF-Net: An Unsupervised Framework for Infrared and Visible Image Fusion',
                     esiHighlyCited: true,
-                    authors: 'Ruichao Hou, Dongming Zhou, Rencan Nie, Dong Liu, Licheng Xiong, Yan Guo, and Chuanbo Yu',
+                    authors: 'Ruichao Hou, Dongming Zhou, Rencan Nie, Dong Liu, Lei Xiong, Yanbu Guo, and Chuanbo Yu',
                     venue: 'IEEE Transactions on Computational Imaging (TCI), 2020, 6:640-651, DOI: 10.1109/TCI.2020.2965304',
                 },
                 {
