@@ -262,7 +262,7 @@ export default function Page() {
             workTitle: '工作经历',
             work: [
                 '2024-2026，南京大学，软件学院，助理研究员',
-                '2026-现在，中国药科大学，生物医药卓越工程师学院，副教授',
+                '2026-现在，中国药科大学，人工智能学院，副教授',
             ],
             serviceTitle: '学术服务',
             service: [
@@ -323,7 +323,7 @@ export default function Page() {
             workTitle: 'Work Experience',
             work: [
                 '2024-2026, Software Institute, Nanjing University, Assistant Researcher',
-                '2026-Present, School of Elite Biomedical Engineers, China Pharmaceutical University, Associate Professor',
+                '2026-Present, School of Artificial Intelligence, China Pharmaceutical University, Associate Professor',
             ],
             serviceTitle: 'Academic Service',
             service: [
