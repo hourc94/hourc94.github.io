@@ -490,9 +490,9 @@ export default function Page() {
                     venue: 'IEEE Signal Processing Letters (SPL), 2026, 33:594-598, DOI: 10.1109/LSP.2026.3653684',
                 },
                 {
-                    title: 'Relationship Representation Diversity Enhancement for Scene Graph Generation',
+                    title: 'Relationship representation diversity enhancement for scene graph generation',
                     authors: 'Yunqing He, Ruichao Hou*, Jia Bei, and Tongwei Ren',
-                    venue: 'Computational Visual Media Journal (CVMJ), 2026',
+                    venue: 'Computational Visual Media (CVM), 2026, Early Access, pp. 1-16, DOI: 10.26599/CVM.2025.9450525',
                 },
             ],
         },
