@@ -427,6 +427,7 @@ export default function Page() {
 
     const honors = isZh
         ? [
+              '2026年江苏省青年科技人才托举工程资助',
               '2026年中国指挥与控制学会科技进步奖一等奖',
               '2026年“挑战杯”创业计划竞赛江苏省一等奖指导教师',
               '2025年“挑战杯”学术科技作品竞赛人工智能+应用赛全国一等奖指导教师',
@@ -436,6 +437,7 @@ export default function Page() {
               '2022年南京大学优秀博士创新能力提升计划资助',
           ]
         : [
+              '2026 Funded by the Jiangsu Provincial Young Science and Technology Talent Support Program',
               '2026 First Prize, Science and Technology Progress Award, Chinese Institute of Command and Control',
               '2026 Advisor of a Jiangsu provincial first-prize team, “Challenge Cup” Entrepreneurship Plan Competition',
               '2025 Advisor of a national first-prize team, “Challenge Cup” Academic Science and Technology Works Competition AI+Application Track',
