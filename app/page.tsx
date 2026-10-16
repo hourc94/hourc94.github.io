@@ -1031,9 +1031,15 @@ export default function Page() {
                                             {text.newsTitle}
                                         </h3>
                                         <ul className="space-y-4 text-slate-600">
-                                            {text.news.map((item) => (
+                                            {text.news.map((item, index) => (
                                                 <li key={item} className="flex items-stretch gap-3">
-                                                    <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-blue-500"></span>
+                                                    {index === 0 ? (
+                                                        <span className="mt-0.5 shrink-0 text-lg leading-5 text-yellow-400" aria-label="置顶">
+                                                            ★
+                                                        </span>
+                                                    ) : (
+                                                        <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-blue-500"></span>
+                                                    )}
                                                     <span>{item}</span>
                                                 </li>
                                             ))}
