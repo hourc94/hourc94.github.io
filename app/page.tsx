@@ -272,6 +272,7 @@ export default function Page() {
             ],
             newsTitle: '动态',
             news: [
+                '招生信息：长期招收对药学人工智能、计算机交叉、具身智能等前沿交叉领域感兴趣的博士生、硕士生和本科生，欢迎联系：rchou@cpu.edu.cn。',
                 '2026年7月15日，荣获中国指挥与控制学会科技进步奖一等奖。',
                 '2026年6月7日，指导学生获第十五届“挑战杯”中国大学生创业计划竞赛江苏省一等奖。',
             ],
@@ -333,6 +334,7 @@ export default function Page() {
             ],
             newsTitle: 'News',
             news: [
+                'Admissions: We welcome Ph.D., master’s, and undergraduate students interested in pharmaceutical AI, computer science intersections, and embodied intelligence. Contact: rchou@cpu.edu.cn.',
                 'July 15, 2026: Received the First Prize of the Science and Technology Progress Award from the Chinese Institute of Command and Control.',
                 'June 7, 2026: Supervised students won the Jiangsu Provincial First Prize in the 15th “Challenge Cup” Chinese College Students Entrepreneurship Plan Competition.',
             ],
