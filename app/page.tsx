@@ -960,7 +960,7 @@ export default function Page() {
                     </div>
                 </header>
 
-                <main className="max-w-6xl mx-auto px-6 py-12">
+                <main className={`${activeSection === 'achievements' ? 'max-w-screen-2xl' : 'max-w-6xl'} mx-auto px-6 py-12`}>
                     <div
                         className={`transition-all duration-700 ${
                             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
@@ -1183,13 +1183,13 @@ export default function Page() {
                                 </div>
 
                                 <div className="grid md:grid-cols-1 gap-8">
-                                    <div className="glass-effect rounded-2xl shadow-lg p-8 subtle-hover">
+                                    <div className="glass-effect min-w-0 rounded-2xl shadow-lg p-8 subtle-hover">
                                         <h3 className="text-xl font-bold text-slate-800 mb-5">
                                             {text.papersTitle}
                                         </h3>
-                                        <div className="space-y-8">
+                                        <div className="space-y-8 overflow-x-auto pb-2" tabIndex={0} aria-label={isZh ? '科研论文列表，可横向滚动' : 'Research publications, horizontally scrollable'}>
                                             {publications.map((group) => (
-                                                <div key={group.year} className="flex gap-5">
+                                                <div key={group.year} className="flex w-max min-w-full gap-5">
                                                     <div className="w-16 shrink-0">
                                                         <div className="sticky top-24 rounded-xl bg-blue-50 px-3 py-2 text-center text-sm font-bold text-blue-600">
                                                             {group.year}
@@ -1205,7 +1205,7 @@ export default function Page() {
                                                                 <div>
                                                                     <p className="flex items-start gap-2 font-semibold leading-relaxed text-slate-800">
                                                                         {paper.esiHighlyCited && <EsiTrophyIcon />}
-                                                                        <span>{paper.title}</span>
+                                                                        <span className="whitespace-nowrap">{paper.title}</span>
                                                                     </p>
                                                                     <p className="mt-1 text-sm leading-relaxed text-slate-600">
                                                                         <HighlightAuthor authors={paper.authors} />
