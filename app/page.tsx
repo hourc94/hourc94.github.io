@@ -1243,10 +1243,10 @@ export default function Page() {
                         {activeSection === 'admission' && (
                             <div className="max-w-4xl mx-auto">
                                 <div className="glass-effect rounded-2xl shadow-xl p-10 subtle-hover text-center">
-                                    <div className="w-24 h-24 bg-white rounded-full mx-auto mb-8 flex items-center justify-center border border-blue-100 shadow-md p-3">
+                                    <div className="w-32 h-32 bg-white rounded-2xl mx-auto mb-8 flex items-center justify-center border border-blue-100 shadow-md overflow-hidden">
                                         <img
-                                            src={withBasePath('/cpu-logo.png')}
-                                            alt={isZh ? '中国药科大学标志' : 'China Pharmaceutical University logo'}
+                                            src={withBasePath('/phai-logo.png')}
+                                            alt={isZh ? '药学人工智能图标' : 'Pharmaceutical AI logo'}
                                             className="h-full w-full object-contain"
                                         />
                                     </div>
