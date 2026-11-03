@@ -1270,6 +1270,25 @@ export default function Page() {
                                             {text.admissionValue}
                                         </p>
                                     </div>
+                                    <div className="mt-8 flex flex-col items-center gap-4">
+                                        <p className="text-base font-semibold text-slate-700">
+                                            {isZh ? '扫码申请加入团队' : 'Scan to apply to join the team'}
+                                        </p>
+                                        <a
+                                            href={withBasePath('/admission-qr.png')}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            aria-label={isZh ? '放大查看招生申请二维码' : 'Open the admission QR code at full size'}
+                                            className="block w-full max-w-md"
+                                        >
+                                            <img
+                                                src={withBasePath('/admission-qr.png')}
+                                                alt={isZh ? '中国药科大学人工智能学院招生申请二维码' : 'Application QR code for the School of Artificial Intelligence at China Pharmaceutical University'}
+                                                className="h-auto w-full rounded-xl border border-blue-100 shadow-md"
+                                                loading="lazy"
+                                            />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         )}
