@@ -1191,7 +1191,7 @@ export default function Page() {
                                             {publications.map((group) => (
                                                 <div key={group.year} className="flex w-max min-w-full gap-5">
                                                     <div className="w-16 shrink-0">
-                                                        <div className="sticky top-24 rounded-xl bg-blue-50 px-3 py-2 text-center text-sm font-bold text-blue-600">
+                                                        <div className="rounded-xl bg-blue-50 px-3 py-2 text-center text-sm font-bold text-blue-600">
                                                             {group.year}
                                                         </div>
                                                     </div>
