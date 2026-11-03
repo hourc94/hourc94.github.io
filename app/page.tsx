@@ -454,6 +454,11 @@ export default function Page() {
             year: '2026',
             papers: [
                 {
+                    title: 'SPLG-Mamba: Structure-Preserving Local-Global Mamba Network for Salient Object Detection in Optical Remote Sensing Images',
+                    authors: 'Yi Xu, Ruichao Hou, Tongwei Ren, and Gangshan Wu',
+                    venue: 'IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2026, DOI: 10.1109/TGRS.2026.3749809',
+                },
+                {
                     title: 'Segmentation-Guided Transformer Network for Subtle Visual Relationship Detection',
                     authors: 'Fan Yu, Hanxi Cao, Ruichao Hou*, and Tongwei Ren',
                     venue: 'Multimedia Systems (MMS), 2026, 32:412, DOI: 10.1007/s00530-026-02486-5',
